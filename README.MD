@@ -3,7 +3,7 @@
 Welcome to my personal software developer portfolio.  
 This repository hosts my portfolio website, to showcase my web development projects, coding skills, and interactive work.  
 
-You can view the live site here: [https://kgriffin90.github.io/KGriffin90](https://kgriffin90.github.io/KGriffin90)
+You can view the live site here: [https://kgriffin90.github.io/kimanigriffin](https://kgriffin90.github.io/kimanigriffin)
 
 ---
 
@@ -24,7 +24,7 @@ This portfolio highlights:
 
 ## 💻 Projects & Content
 Some featured projects:  
-- **[Kimani Griffin Artwork](https://www.kimanigriffin.com)** - Website platform showcasing personal and commissioned artwork
+- **[Kimani Griffin Artwork](https://www.kimanigriffinartwork.com)** - Website platform showcasing personal and commissioned artwork
 - **[MakeMind Universal](https://github.com/kgriffin90/MakeMind)** — Full-stack platform integrating media, community, and merchandising  
 
 ---
