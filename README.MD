@@ -9,26 +9,22 @@ You can view the live site here: [https://kgriffin90.github.io/KGriffin90](https
 
 ## 📌 About
 This portfolio highlights:  
-- Full-stack and front-end web development projects  
-- Interactive websites and animations  
-- Collaborative coding platforms and tools  
-
-The site is built with HTML5, CSS3, JavaScript, jQuery, and Bootstrap, and is deployed using GitHub Pages.
+- Full-stack web development  
+- Interactive website
+- Artwork Portfolio (projects)
 
 ---
 
 ## 🛠️ Skills & Tools
-- Web Development (HTML5, CSS3, JavaScript, jQuery, Bootstrap)  
+- Web Development (HTML5, CSS3, JavaScript, Bootstrap)  
 - Responsive and interactive UI design  
-- Git & GitHub Pages  
 - Front-end animations and effects  
 
 ---
 
 ## 💻 Projects & Content
 Some featured projects:  
-- **[CollabHub](https://github.com/kgriffin90/CollabHub)** — Collaborative project management platform  
-- **[Pixi.js Portfolio Animations](https://kgriffin90.github.io/KGriffin90)** — Interactive website with animations  
+- **[Kimani Griffin Artwork](https://www.kimanigriffin.com)** - Website platform showcasing personal and commissioned artwork
 - **[MakeMind Universal](https://github.com/kgriffin90/MakeMind)** — Full-stack platform integrating media, community, and merchandising  
 
 ---
