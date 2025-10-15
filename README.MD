@@ -16,7 +16,7 @@ This portfolio highlights:
 ---
 
 ## 🛠️ Skills & Tools
-- Web Development (HTML5, CSS3, JavaScript, Bootstrap)  
+- Web Development (HTML5, CSS3, JavaScript)  
 - Responsive and interactive UI design  
 - Front-end animations and effects  
 
