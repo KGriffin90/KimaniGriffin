@@ -338,6 +338,22 @@ svg {
   vertical-align: middle;
 }
 
+/* Default: Mobile first */
+.profile-img {
+  width: 100%;
+  max-width: 16rem; /* controls mobile size */
+  height: auto;
+  border-radius: 50%; /* ensures perfect circle */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+/* Medium screens (tablets and up) */
+@media (min-width: 768px) {
+  .profile-img {
+    max-width: 20rem;
+  }
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse;
@@ -13029,7 +13045,7 @@ body {
 .contact-section {
   padding-top: 8rem;
   padding-bottom: 5rem;
-  min-height: 50vh; /* or 100vh if you want full screen height */
+  min-height: 50vh; 
 background: linear-gradient(to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.7) 50%,
