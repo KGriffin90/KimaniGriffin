@@ -3,7 +3,7 @@
 Welcome to my personal software developer portfolio.  
 This repository hosts my portfolio website, to showcase my web development projects, coding skills, and interactive work.  
 
-You can view the live site here: [https://kgriffin90.github.io/KimaniGriffin](https://kgriffin90.github.io/KimaniGriffin)
+You can view the live site here: [https://KimaniGriffin.com](https://KimaniGriffin.com)
 
 ---
 
