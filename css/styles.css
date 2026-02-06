@@ -2131,7 +2131,7 @@ progress {
 .table-primary {
   --bs-table-color: #000;
   --bs-table-bg: #e0eceb;
-  --bs-table-border-color: #cad4d4;
+  --bs-table-border-color: #e7efef;
   --bs-table-striped-bg: #d5e0df;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #cad4d4;
@@ -4209,14 +4209,15 @@ fieldset:disabled .btn {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-color: #333;
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
 }
 
 .nav-link {
@@ -4224,7 +4225,7 @@ fieldset:disabled .btn {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color: black;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -12888,7 +12889,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg(light).webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12950,14 +12951,14 @@ body {
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.7) 50%,
       rgba(0, 0, 0, 1) 100%),
-    url("../assets/img/bg.png");
+    url("../assets/img/bg(light).webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   text-align: center;
-  padding-top: 8rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .about-section p {
@@ -12973,7 +12974,7 @@ body {
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.7) 50%,
       rgba(0, 0, 0, 1) 100%),
-    url("../assets/img/bg.png");
+    url("../assets/img/bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12982,24 +12983,23 @@ body {
   padding-bottom: 5rem;
 }
 
-.projects h1,
-.projects .h1 {
+.projects h2,
+.projects .h2 {
+  text-align: center;
+  margin: 0 auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.1rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+background: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1) 0%,   /* fully white */
+  rgba(255, 255, 255, 1) 10%,  /* keeps top solid white */
+  rgba(255, 255, 255, 0) 100%  /* fades to transparent at bottom */
+);  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   padding-top: 5rem;
   padding-bottom: 3rem;
-}
-
-.projects h2,
-.projects .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
 }
 
 .projects .row:last-child {
@@ -13038,7 +13038,9 @@ body {
   .projects h2,
   .projects .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 4.25rem;
+    letter-spacing: 0.4rem;
+
   }
 }
 
@@ -13050,7 +13052,7 @@ background: linear-gradient(to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.7) 50%,
       rgba(0, 0, 0, 1) 100%),
-    url("../assets/img/bg.png");  background-position: center;
+    url("../assets/img/bg(light).webp");  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
