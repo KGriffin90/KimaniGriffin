@@ -1,51 +1,33 @@
-// Scripts
-//
-// 
+window.addEventListener('DOMContentLoaded', () => {
 
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
+    // Navbar shrink
+    const navbarShrink = () => {
+        const navbar = document.querySelector('#mainNav');
+        if (!navbar) return;
+        navbar.classList.toggle('navbar-shrink', window.scrollY > 0);
     };
-
-    // Shrink the navbar 
     navbarShrink();
-
-    // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
+    // Collapse navbar on small screens
     const navbarToggler = document.querySelector('.navbar-toggler');
-    const responsiveNavItems = document.querySelectorAll('#navbarResponsive .nav-link');
-
+    const navLinks = document.querySelectorAll('#navbarResponsive .nav-link');
     if (navbarToggler) {
-        responsiveNavItems.forEach((responsiveNavItem) => {
-            responsiveNavItem.addEventListener('click', () => {
-                const style = window.getComputedStyle(navbarToggler);
-                if (style.display !== 'none') {
+        navLinks.forEach(navItem => {
+            navItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
                     navbarToggler.click();
                 }
             });
         });
     }
+
+    //Manual active underline
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
 
 });
