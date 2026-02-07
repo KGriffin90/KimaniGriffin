@@ -12889,13 +12889,13 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg(light).webp");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .masthead h1,
@@ -12912,7 +12912,6 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
 }
 
 .masthead h2,
@@ -12923,12 +12922,11 @@ body {
     rgba(235, 235, 235, 0.9) 70%,
     rgba(255, 255, 255, 0) 100%
   );
-
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-
   text-shadow: 0 2px 2px rgba(0,0,0,0.18);
+  padding: 0 1rem;
 }
 
 .masthead .btn-primary:hover {
@@ -12938,7 +12936,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .masthead h1,
   .masthead .h1 {
     font-size: 4rem;
