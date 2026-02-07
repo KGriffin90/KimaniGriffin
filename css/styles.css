@@ -341,9 +341,11 @@ svg {
 /* Default: Mobile first */
 .profile-img {
   width: 100%;
-  max-width: 16rem; /* controls mobile size */
+  max-width: 16rem;
+  /* controls mobile size */
   height: auto;
-  border-radius: 50%; /* ensures perfect circle */
+  border-radius: 50%;
+  /* ensures perfect circle */
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
 
@@ -12827,13 +12829,13 @@ body {
 
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   #mainNav .nav-link:hover {
@@ -12902,16 +12904,37 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(220, 220, 220, 0.9) 60%,
+      rgba(255, 255, 255, 0) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
 }
 
 .masthead h2,
 .masthead .h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 0.9) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  text-shadow: 0 2px 2px rgba(0,0,0,0.18);
+}
+
+.masthead .btn-primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -12958,15 +12981,31 @@ body {
   background-size: cover;
   text-align: center;
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: .5rem;
 }
+
+.about-section h2,
+#about h2 {
+  text-align: left;
+  margin: 0 auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 0) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-bottom: 1rem;
+}
+
 
 .about-section p {
   margin-bottom: 5rem;
 }
 
 .projects {
-  padding-top: 10rem;
+  padding-top: 6rem;
   position: relative;
   width: 100%;
   min-height: 20rem;
@@ -12990,12 +13029,11 @@ body {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 2.5rem;
   text-align: center;
-background: linear-gradient(
-  to bottom,
-  rgba(255, 255, 255, 1) 0%,   /* fully white */
-  rgba(255, 255, 255, 1) 10%,  /* keeps top solid white */
-  rgba(255, 255, 255, 0) 100%  /* fades to transparent at bottom */
-);  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   padding-top: 5rem;
@@ -13003,7 +13041,11 @@ background: linear-gradient(
 }
 
 .projects .row:last-child {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+.projects .project-text p {
+  color: #d2eef3;
 }
 
 @media (min-width: 768px) {
@@ -13011,6 +13053,7 @@ background: linear-gradient(
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
   .projects h1,
   .projects .h1 {
     font-size: 4rem;
@@ -13023,6 +13066,7 @@ background: linear-gradient(
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
   .projects {
     min-height: 100vh;
     padding: 0;
@@ -13047,12 +13091,13 @@ background: linear-gradient(
 .contact-section {
   padding-top: 8rem;
   padding-bottom: 5rem;
-  min-height: 50vh; 
-background: linear-gradient(to bottom,
+  min-height: 50vh;
+  background: linear-gradient(to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.7) 50%,
       rgba(0, 0, 0, 1) 100%),
-    url("../assets/img/bg(light).webp");  background-position: center;
+    url("../assets/img/bg(light).webp");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13102,5 +13147,5 @@ background: linear-gradient(to bottom,
 
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
