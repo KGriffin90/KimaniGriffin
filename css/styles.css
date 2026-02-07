@@ -12778,11 +12778,17 @@ fieldset:disabled .btn {
 
 html {
   scroll-padding-top: calc(4.5rem - 1px);
+  
 }
 
 body {
   letter-spacing: 0.0625em;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 #mainNav {
   min-height: 3.5rem;
