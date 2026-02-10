@@ -12846,7 +12846,7 @@ html, body {
 
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
-    filter: drop-shadow(0 0 4px #fff);
+    filter: drop-shadow(0 0 4px #000000);
     transform: scale3d(1.15, 1.015, 1.015);
   }
 
